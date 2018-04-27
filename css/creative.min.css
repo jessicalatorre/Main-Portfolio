@@ -28,9 +28,9 @@ hr.light {
 }
 #glyphy {
     font-size: 40px;
-    display: block;
+    /* display: block;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none; */
 }
 
 #glyph-box {
@@ -67,12 +67,22 @@ a:hover {
 }
 
 h2 {
-    font-family: 'Sanchez', serif;
-    color: rgb(238, 238, 204);
+    font-family: 'Permanent Marker', cursive;
+    font-stretch: ultra-expanded;
+    letter-spacing: 4px;
+    text-shadow:
+    -1px -1px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 rgb(114, 35, 35),
+    1px 1px 0 #000;
+    word-spacing: 4px;
+    color: rgb(216, 207, 207);
+    text-align: center;
+
 }
 
-h1,h3,h4,h5,h6 {
-    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
+h1,h3,h5,h6 {
+    font-family: permane
     color: rgb(247, 247, 234);
 }
 .bg-primary {
@@ -86,6 +96,10 @@ h1,h3,h4,h5,h6 {
 } */
 section {
     padding:8rem 0
+}
+
+#portfolio {
+    margin-top: 100px;
 }
 .section-heading {
     margin-top:0
@@ -111,7 +125,8 @@ img::-moz-selection {
     border-bottom:1px solid rgba(33,37,41,.1);
     background-color: #192028;
     font-family: 'Permanent Marker', cursive;
-    letter-spacing: 4px;
+    word-spacing: 6px;
+    letter-spacing: 5px;
     -webkit-transition:all .2s;-moz-transition:all .2s;transition:all .2s
 } 
 
