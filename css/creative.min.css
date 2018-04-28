@@ -1,7 +1,6 @@
 /* @font-face {
     font-family: faune-reg;
     src: url('../faune-reg.otf');
-
 } */
 
 
@@ -365,6 +364,13 @@ img::-moz-selection {
         background-color: blue;
     }
 
+<<<<<<< HEAD
+    .project-type {
+        color:rgb(4, 21, 40);
+    }
+
+=======
+>>>>>>> ff57a6140973971e51850d47f0354d1d5bec1bda
     #portfolio {
             background-color: rgb(244, 232, 232);
     }
@@ -438,3 +444,15 @@ img::-moz-selection {
             .btn-primary:active,.btn-primary:focus {
                 box-shadow:0 0 0 .2rem rgb(7, 23, 23)!important;
         }
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog
+About
