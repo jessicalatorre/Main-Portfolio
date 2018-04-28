@@ -14,8 +14,8 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -23,7 +23,7 @@
     rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
     rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Sanchez" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Sanchez" rel="stylesheet">
 
 
   <!-- Plugin CSS -->
@@ -88,30 +88,35 @@
   <section class="bg-primary" id="about">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8">
-          <h2 class="section-heading">About Me</h2>
+        <div class="col-lg-4">
+          <h2 class="section-heading col-lg-8">About Me</h2>
           <!-- <hr class="light my-4"> -->
         </div>
         <br>
+        <div class="container">
+          <div class="col-lg-4">
+            <img src="img/headshot.jpg" class="thumbnail" alt="Jessica's Photo">
+          </div>
+          <div class="col-lg-8">
+            <div class="caption">
+              <p class="text-faded mb-4 pull-right" id="about-me">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                including versions of Lorem Ipsum.
+                <br>
+                <br>
+                <br> </p>
 
-        <div class="row"></div>
-        <div class="col-sm-6">
-          <img src="img/headshot.jpg" class="thumbnail" alt="Jessica's Photo">
-        </div>
-        <div class="col-sm-12">
-          <div class="caption">
-            <p class="text-faded mb-4 pull-right" id="about-me">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-              make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
-              of Lorem Ipsum.</p>
 
-            <div id="glyph-box"></div>
-            <a class="glyphicon glyphicon-menu-down" id="glyphy" href="#portfolio">
-              <!-- <span class="glyphicon glyphicon-menu-down" aria-hidden="f" id="chevron" href="#portfolio">
-                      </span> -->
-            </a>
+              <div id="glyph-box">
+                <a class="glyphicon glyphicon-menu-down col-lg-6" id="glyphy" href="#portfolio">
+                  <!-- <span class="glyphicon glyphicon-menu-down" aria-hidden="f" id="chevron" href="#portfolio">
+                                  </span> -->
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         <br>
@@ -121,12 +126,14 @@
     </div>
   </section>
 
+  <!-- Portfolio Divs -->
   <section class="p-0" id="portfolio">
     <div class="container-fluid p-0">
-      <div class="row no-gutters popup-gallery">
+      <!-- <div class="row no-gutters popup-gallery"> -->
+      <div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+          <a class="portfolio-box" href="https://jessicalatorre.github.io/Train-Scheduler/">
+            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt=>
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
                 <div class="project-category text-faded">
@@ -136,36 +143,45 @@
                   Train Scheduler
                 </div>
                 <div>
-                  <p class="project-type">This app stores the arrival and departure times for trains. I used Firebase to store the data server-side and the moment.js library to manipulate the time display the next arrival.</p>
+                  <p class="project-type">This app stores the arrival and departure times for trains. I used Firebase to store the data server-side
+                    and the moment.js library to manipulate the time display the next arrival.</p>
                 </div>
 
               </div>
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-name">
-                  Crystals Collector
-                </div>
-              </div>
-            </div>
-          </a>
+
+        <div>
+          <h4>Projects</h4>
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-name">
-                  Giphy API
+
+        <div id="portfolio container">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="https://jessicalatorre.github.io/Train-Scheduler/">
+              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="Train Scheduler Project">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-name">
+                    Crystals Collector
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-name">
+                    Giphy API
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
         </div>
 
 
