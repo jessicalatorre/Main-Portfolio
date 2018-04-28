@@ -1,8 +1,68 @@
 /* @font-face {
     font-family: faune-reg;
     src: url('../faune-reg.otf');
-
 } */
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
+  background-size: cover;
+  height:100%;
+}
+
+#feedback-page{
+	text-align:center;
+}
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+#form-container {
+	/* background-color:rgba(72,72,72,0.4); */
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+  margin-top:30px;
+	margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
 
 body,html {
     width:100%;height:100%
@@ -28,8 +88,15 @@ hr.light {
 }
 #glyphy {
     font-size: 40px;
-    display: block;
+    /* display: block;
     text-align: center;
+    text-decoration: none; */
+}
+
+#glyphy-two {
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 100px;
     text-decoration: none;
 }
 
@@ -37,10 +104,18 @@ hr.light {
     text-align: center;
 }
 
-h3 {
-    color: rgb(247, 247, 234);
-    font-family: Arial, Helvetica, sans-serif;
+h2 {
+    color:  rgb(4, 21, 40);
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Sanchez', serif;
+    display: block;
+    text-align: center;
     font-size: 40px;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 rgb(227, 227, 195),
+    1px 1px 0 #000;
 }
 
 p {
@@ -51,13 +126,20 @@ p {
 }
 
 #welcome-text {
-    color: rgba(245, 245, 252, 0.783);
+    /* color: rgba(245, 245, 252, 0.783); */
+    /* color: rgba(4, 4, 36, 0.625); */
+    font-weight: 400;
+   /* font-family: Arial, Helvetica, sans-serif; */
     font-family: 'Cutive Mono', monospace;
-    size: 30px;
+    text-shadow:
+    /* -1px -1px 0 #000, */
+    .5px -.5px 0 #000,
+    -.5px -.5px 0 rgb(193, 188, 188),
+    1px 1px 0 #000;
 }
 
 .project-type {
-    color:  rgb(4, 21, 40);
+    /* color:  rgb(4, 21, 40); */
 }
 a {
     color:#f05f40;-webkit-transition:all .2s;-moz-transition:all .2s;transition:all .2s;
@@ -66,26 +148,62 @@ a:hover {
     color:#f05f40;
 }
 
-h2 {
-    font-family: 'Sanchez', serif;
-    color: rgb(238, 238, 204);
+h3 {
+    font-family: 'Permanent Marker', cursive;
+    font-stretch: ultra-expanded;
+    letter-spacing: 4px;
+    text-shadow:
+    -1px -1px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 rgb(114, 35, 35),
+    1px 1px 0 #000;
+    word-spacing: 4px;
+    color: rgb(216, 207, 207);
+    text-align: center;
 }
 
-h1,h3,h4,h5,h6 {
-    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
+h1,h5,h6 {
+    font-family: 'Permanent Marker', cursive;
     color: rgb(247, 247, 234);
 }
+
+#project-div {
+    background-color:rgb(244, 232, 232);
+}
 .bg-primary {
-    background-color:#192028!important;
+    background-color:#383535!important;
 }
 .bg-dark {
-    background-color:#212529!important
+    background-color:#192028ee!important;
+    /* background-color:#212529!important */
 }
 /* .text-faded {
     color:rgba(255,255,255,.7)
 } */
 section {
     padding:8rem 0
+}
+
+#project-header {
+    padding-top: 30px;
+}
+
+#reach-out {
+   clear: both;
+}
+
+#contact {
+    background-color:rgb(133, 171, 171);
+}
+
+#icon-panel {
+    display: block;
+    align-items: center;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
 }
 .section-heading {
     margin-top:0
@@ -111,7 +229,8 @@ img::-moz-selection {
     border-bottom:1px solid rgba(33,37,41,.1);
     background-color: #192028;
     font-family: 'Permanent Marker', cursive;
-    letter-spacing: 4px;
+    word-spacing: 6px;
+    letter-spacing: 5px;
     -webkit-transition:all .2s;-moz-transition:all .2s;transition:all .2s
 } 
 
@@ -120,6 +239,7 @@ img::-moz-selection {
     /* text-transform:uppercase; */
     color: rgb(238, 238, 204);
     font-family: 'Sanchez', serif;
+    font-size: 30px;
     /*  */
     /* text-decoration-line: none; */
     /* font-family: impact-labelimport; */
@@ -209,7 +329,7 @@ img::-moz-selection {
     }
     @media (min-width:768px){
         header.masthead p {
-            font-size: 20px;
+            font-size: 30px;
         }
     }
     @media (min-width:992px){
@@ -217,7 +337,7 @@ img::-moz-selection {
             height:100vh;
             min-height:650px;
             padding-top:0;
-            padding-bottom:0;
+
         }
         header.masthead h1 {
             font-size:3rem
@@ -235,7 +355,17 @@ img::-moz-selection {
         position:relative;
         display:block;
         max-width:650px;
-        margin:0 auto
+        margin:0 auto;
+        /* padding-bottom: 80px; */
+        background-color: blue;
+    }
+
+    .project-type {
+        color:rgb(4, 21, 40);
+    }
+
+    #portfolio {
+            background-color: rgb(244, 232, 232);
     }
     .portfolio-box .portfolio-box-caption {
         position:absolute;
@@ -295,8 +425,10 @@ img::-moz-selection {
         }
         .btn-primary {
             color:rgb(247, 247, 234);
-            background-color:rgb(7, 23, 23);
+            background-color:#a54630;
             border-color: rgb(249, 249, 227);
+            letter-spacing: 2px;
+            word-spacing: 2px;
         }
             .btn-primary:active,.btn-primary:focus,.btn-primary:hover {
                 color:rgb(249, 249, 220);
@@ -305,3 +437,15 @@ img::-moz-selection {
             .btn-primary:active,.btn-primary:focus {
                 box-shadow:0 0 0 .2rem rgb(7, 23, 23)!important;
         }
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog
+About
