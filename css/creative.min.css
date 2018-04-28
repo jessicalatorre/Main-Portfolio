@@ -126,6 +126,10 @@ p {
     size: 25px;
 }
 
+.project-type {
+    color:  rgb(4, 21, 40);
+}
+
 #welcome-text {
     /* color: rgba(245, 245, 252, 0.783); */
     /* color: rgba(4, 4, 36, 0.625); */
