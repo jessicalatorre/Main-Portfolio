@@ -37,6 +37,8 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat
   -webkit-border-radius: 7px;
 }
 
+
+
 .feedback-input {
 	color:#3c3c3c;
 	font-family: Helvetica, Arial, sans-serif;
@@ -85,6 +87,22 @@ hr.light {
     position: relative;
     right: 10px;
     float: left;
+    color: rgb(233, 223, 223)
+}
+
+.thumbnail {
+    display: block;
+    padding: none;
+    /* margin-bottom: 20px; */
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+    margin-top: 3%;
+    width: 80%;
 }
 #glyphy {
     font-size: 40px;
@@ -119,7 +137,7 @@ h2 {
 }
 
 p {
-    color:rgba(238, 231, 231, 0.831);
+    color:rgba(69, 60, 60, 0.934);
     font-family: 'Cutive Mono', monospace;
     letter-spacing: .2px;
     size: 25px;
@@ -444,15 +462,3 @@ img::-moz-selection {
             .btn-primary:active,.btn-primary:focus {
                 box-shadow:0 0 0 .2rem rgb(7, 23, 23)!important;
         }
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
