@@ -382,13 +382,15 @@ img::-moz-selection {
         background-color: blue;
     }
 
-<<<<<<< HEAD
-    .project-type {
-        color:rgb(4, 21, 40);
+    /* Targeting an element within a div  */
+    .portfolio-grid-div > div > a {
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
-=======
->>>>>>> ff57a6140973971e51850d47f0354d1d5bec1bda
+      /* NOTE: You can also target an element within a div within a containter see below*/
+    /* .portfolio-grid-div > div > a { */
+
     #portfolio {
             background-color: rgb(244, 232, 232);
     }
